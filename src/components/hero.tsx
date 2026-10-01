@@ -109,7 +109,9 @@ export function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative flex min-h-[100svh] w-full flex-col justify-center overflow-hidden px-6 pt-28 pb-16 sm:px-10 lg:px-16"
+      // Negative right margin cancels body's sidebar gutter (pr-11/sm:pr-10/lg:pr-5) so the
+      // background reaches the viewport edge; extra right padding keeps content in place.
+      className="relative -mr-11 flex min-h-[100svh] flex-col justify-center overflow-hidden pl-6 pr-[4.25rem] pt-28 pb-16 sm:-mr-10 sm:pl-10 sm:pr-20 lg:-mr-5 lg:pl-16 lg:pr-[5.25rem]"
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[100svh] noise-veil" />
 
