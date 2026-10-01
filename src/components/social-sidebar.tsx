@@ -22,8 +22,7 @@ export function SocialSidebar() {
   return (
     <aside
       aria-label="Социальные сети"
-      className="fixed top-1/2 z-40 flex -translate-y-1/2 flex-col items-end gap-2 sm:gap-3"
-      style={{ right: "max(0.625rem, env(safe-area-inset-right, 0px))" }}
+      className="fixed right-0 top-1/2 z-[100] m-0 flex -translate-y-1/2 flex-col items-end gap-2 p-0 sm:right-[max(0.625rem,env(safe-area-inset-right,0px))] sm:gap-3"
     >
       {socialLinks.map((social) => {
         const Icon = icons[social.id];
